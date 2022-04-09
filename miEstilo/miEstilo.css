@@ -1,0 +1,43 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+}
+
+.item{
+    background-color: rgb(57, 58, 109);
+        
+}
+
+.item1{
+    height: 200px;
+}
+
+.item3{   
+    height: 40px;
+    display: flex;
+    object-fit: contain;
+    align-items: center;
+    gap: 70px;
+    margin-left: 200px;
+}
+
+
+img{
+    
+    max-width: 100%;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    justify-content:space-around;
+}
