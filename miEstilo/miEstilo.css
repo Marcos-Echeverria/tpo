@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 *:before,
@@ -13,7 +14,7 @@
 }
 
 body{
- background-color: #0F1923;
+ background-color: #18222D;
 }
 
 /* SECCION DE HEADER Y LINKS */
@@ -113,15 +114,16 @@ a{
 
   .container{
     color: white;
-    border: #1B2733 solid;
+    border: solid #18222D;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     object-fit: contain;
     justify-content:end;
     text-align: center;
-    background-color: #1B2733;
-    margin-right: 0;
-    padding-right: 20px;
+    margin-left: 18px;
+    margin-right: 44px;
+    margin-top: 15px;
+    background-color: #0F1923;
   }
 
   .estadisticas{
@@ -129,36 +131,62 @@ a{
     height: 68px;
     width: 150px;
     margin-left: 00px;
-    background-color: #263747;
   }
 
   .container2{
-    border: solid rgb(0, 255, 128);
+    border: solid #18222D;
     display: grid;
     grid-template-columns: auto auto auto auto;
     object-fit: contain;
     justify-content: end;
     margin-top: 10px;
+    margin-right: 30px;
+    background-color: #0F1923;
   }
 
   .estadisticas2{
-    border: solid rgb(143, 114, 250);
+    /* border: solid rgb(143, 114, 250); */
     color: white;
     height: 76px;
     width: 233px;
   }
 
   .container3{
-    border: solid red;
-    height: 168px;
+    display: grid;
+    border: solid #18222D;
+    height: 157px;
+    width: 300px;
+    margin-top: 50px; 
+    margin-left: 20px;
+    grid-template-columns: auto auto;
+    background-color: #0F1923;
   }
 
   .estadisticas3{
-    border: solid red;
+    /* border: solid #1B2733; */
     color: white;
   }
+
+  .estad1{
+    height: 47px;
+  }
+
+  .estad2{
+    height: 47px;
+  }
   
+  .estad3{
+    height: 107px;
+  }
+  .estad4{
+    text-align: end;
+  }
+
   .grancontainer{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    background-color: #1B2733;
+    margin-top: 70px;
+    padding-bottom: 20px;
+    padding-top: 20px;
   }
