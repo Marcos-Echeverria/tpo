@@ -5,6 +5,7 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
 *:before,
 
 *::after {
@@ -14,6 +15,7 @@
 body{
  background-color: #0F1923;
 }
+
 /* SECCION DE HEADER Y LINKS */
 .header{
     
@@ -101,7 +103,7 @@ a{
       box-shadow: 0 0 0 0 rgb(254, 254, 255);
     }
     100% {
-      box-shadow: 0 0 8px 16px rgba(104, 34, 45, 0.712);
+      box-shadow: 0 0 20px 5px rgba(104, 34, 45, 0.712);
     }
   }
 
@@ -117,12 +119,11 @@ a{
     object-fit: contain;
     justify-content:end;
     text-align: center;
-    margin-top: 100px;
     background-color: #1B2733;
-    padding-top: 100px;
     margin-right: 0;
     padding-right: 20px;
   }
+
   .estadisticas{
     border: solid #0F1923;
     height: 68px;
@@ -130,19 +131,34 @@ a{
     margin-left: 00px;
     background-color: #263747;
   }
+
   .container2{
-    border: solid red;
+    border: solid rgb(0, 255, 128);
     display: grid;
     grid-template-columns: auto auto auto auto;
     object-fit: contain;
     justify-content: end;
     margin-top: 10px;
-    margin-left: 420px;
-    position: absolute;
   }
-  .estadisticas1{
-    border: solid salmon;
+
+  .estadisticas2{
+    border: solid rgb(143, 114, 250);
     color: white;
     height: 76px;
     width: 233px;
+  }
+
+  .container3{
+    border: solid red;
+    height: 168px;
+  }
+
+  .estadisticas3{
+    border: solid red;
+    color: white;
+  }
+  
+  .grancontainer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
   }
