@@ -219,3 +219,60 @@ a{
     padding-bottom: 20px;
     padding-top: 20px;
   }
+
+  .fa-brands{
+    color: white;
+  }
+  .fa-linkedin{
+    display: block;
+  }
+
+  /* FORMULARIOS */
+  .formulario{
+    color: white;
+    margin-left: 10px;
+  }
+
+  footer{
+    color: white;
+    margin-top: 15px;
+    background-color: #1B2733;
+    text-align: center;
+    padding: 30px;
+  }
+
+  label{
+    display: block;
+    margin-top: 15px;
+  }
+
+  h1{
+    display: block;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+
+  textarea{
+    display: block;
+
+  }
+
+  .containerform{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #1B2733 ;
+  }
+
+  h2{
+    display: block;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  iframe{
+    display: block;
+    height:300px;
+    width: 400px;
+  }
