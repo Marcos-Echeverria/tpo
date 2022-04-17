@@ -7,12 +7,6 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-*:before,
-
-*::after {
-  box-sizing: border-box;
-}
-
 body{
  background-color: #18222D;
 }
@@ -100,14 +94,14 @@ a{
     background-color: #FF4655;
   }
   
-  @keyframes shadow-pulse {
+  /* @keyframes shadow-pulse {
     0% {
       box-shadow: 0 0 0 0 rgb(254, 254, 255);
     }
     100% {
       box-shadow: 0 0 20px 5px rgba(104, 34, 45, 0.712);
     }
-  }
+  } */
 
   /* FIN DE SECCION DE HEADER Y LINKS 
   __________________ */
@@ -138,6 +132,7 @@ a{
     align-items: center;
     justify-content: center;
   }
+
   .estadisticas:hover {
     background-color: rgba(61, 77, 97, 0.5);
   }
@@ -155,7 +150,6 @@ a{
   }
 
   .kda-text{
-    /* border: solid rgb(143, 114, 250); */
     color: white;
     height: 76px;
     width: 233px;
@@ -180,15 +174,12 @@ a{
   }
 
   .accuracy-text{
-    /* border: solid #1B2733; */
     color: white;
     
   }
 
   .estad2{
     height: 47px;
-    /* display: grid;
-    justify-content: center; */
   }
   
   .estad3{
@@ -196,6 +187,7 @@ a{
     display: grid;
     justify-content: center;
   }
+
   .estad4{
     display: grid;
     justify-content: center;
@@ -209,13 +201,6 @@ a{
     margin-top: 70px;
     padding-bottom: 20px;
     padding-top: 20px;
-  }
-
-  .fa-brands{
-    color: white;
-  }
-  .fa-linkedin{
-    display: block;
   }
 
   /* FORMULARIOS */
@@ -268,11 +253,13 @@ a{
    padding-left: 20px;
    padding-right: 10px;
   }
+
   .distribution-shot-content{
    display: block;   
    color: white;
    margin-top: 10px;
-}
+  }
+
   .accuracy-titles{
     display: flex;
     justify-content: space-around;
@@ -280,31 +267,31 @@ a{
     font-family: 'Rajdhani', sans-serif;
     font-size: 22px;
     align-items: center;
-}
-.second-title{
-   font-size: 16px;
-   color: grey;
-}
+  }
+  .second-title{
+     font-size: 16px;
+     color: grey;
+  }
 
   .body-parts .distribution-shot-content{
-  color: grey;
-}
+    color: grey;
+  }
 
-.body-img-container{
-  padding-left: 10px;
-}
+  .body-img-container{
+   padding-left: 10px;
+  }
 
-.distribution-shot-content-active{
-  color: #16e5b4;
-}
+  .distribution-shot-content-active{
+   color: #16e5b4;
+  }
 
-.hit-percentage .distribution-shot-content{
-  font-weight: bold;
-}
+  .hit-percentage .distribution-shot-content{
+   font-weight: bold;
+  }
 
-.hits .distribution-shot-content{
-  font-weight: bold;
-  text-align: right;
+  .hits .distribution-shot-content{
+    font-weight: bold;
+    text-align: right;
 }
 
 .hits .distribution-shot-content .distribution-shot-content-text{
