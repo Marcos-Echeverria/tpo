@@ -5,57 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="miEstilo/miEstilo.css">
+    <link rel="stylesheet" href="styles/style.css">
     <script src="https://kit.fontawesome.com/eb19966326.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
     <div class="header">
-        <div class="item item1">
-            <img src="/miEstilo/Chamber_Wallpaper-1-2048x1152-1.png" alt="chamberimg"> 
+        <div class="header-image-conteiner chamber">
+            <img src="/images/Chamber.png" alt="chamberimg"> 
         </div> 
-        <nav class="item item2">
-            <img class="avatar" src="/miEstilo/fotoastra.png" alt="fotoastra">
-            <div class="item3">
-                <a class="btn btn--3" href="/Index.html">Overview</a>
-                <a class="btn btn--3" href="/Matches.html">Matches</a>
-                <a class="btn btn--3" href="/Weapons.html">Weapons</a>
-                <a class="btn btn--3" href="/contacto.html">Contacto</a>
+        <nav class="header-image-conteiner astra">
+            <img class="avatar" src="/images/astra.png" alt="fotoastra">
+            <div class="navbar">
+                <a class="btn btn--3 active" href="/index.html">Overview</a>
+                <a class="btn btn--3" href="/matches.html">Matches</a>
+                <a class="btn btn--3" href="/weapons.html">Weapons</a>
+                <a class="btn btn--3" href="/contact.html">Contact</a>
             </div>
         </nav>
     </div>    
 </header> 
-<main>
-    <div class="grancontainer">
-        <div class="container3">
-            <div class="estadisticas3 estad1">Accuracy</div>
-            <div class="estadisticas3 estad2">Last 21 Matches</div>
-            <div class="estadisticas3 estad3"> <img src="/miEstilo/muñeco.png" alt=""> </div>
-            <div class="estadisticas3 estad4">Head <br> Body <br> Legs</div>
+<main class="main-content">
+    <section class="accuracy">
+        <div class="accuracy-titles">
+            <svg viewBox="0 0 32 32" class="icon-accuracy" data-v-38f61d99="" data-v-7cfbc61d="">
+                <path d="M15.001 32.002v-2.05A14.009 14.009 0 012.049 17.001H.001v-2h2.05a13.943 13.943 0 011.027-4.4l1.846.772a11.819 11.819 0 00-.873 3.623h1.95v2h-1.95a12.012 12.012 0 0010.952 10.951v-1.945h2v1.95A12 12 0 0027.95 17.001h-1.949v-2h1.95A12 12 0 0017.004 4.053v1.95h-2V4.05a11.932 11.932 0 00-3.745.926l-.794-1.838a13.928 13.928 0 014.539-1.088V.002h2v2.054a14 14 0 0112.947 12.948h2.05v2h-2.05a14 14 0 01-12.947 12.951v2.05zm5-8v-4a4 4 0 00-8 0v4h-2v-4a6 6 0 013.109-5.253 4 4 0 115.784 0 5.99 5.99 0 013.107 5.253v4zm-6-12a2 2 0 102-2 2 2 0 00-2 2zM4.059 8.691a14.1 14.1 0 011.264-1.742l1.526 1.293a12.317 12.317 0 00-1.085 1.494zm2.775-3.275a14.341 14.341 0 011.727-1.278l1.066 1.7a12.269 12.269 0 00-1.482 1.095z" data-v-38f61d99="" data-v-7cfbc61d=""></path>
+            </svg>
+            <span class="accuracy-text">Accuracy</span>
+            <span class="accuracy-text second-title">Last 20 Matches</span>
         </div>
-        <div>
+        <div class="distribution-shot">
+            <div class="body-img-container"> <img src="/images/body.png" alt=""></div>
+            <div class="body-parts">
+                <span class="distribution-shot-content">Head</span>
+                <span class="distribution-shot-content">Body</span>
+                <span class="distribution-shot-content">Legs</span>
+            </div>
+            <div class="hit-percentage">
+                <span class="distribution-shot-content">20.6%</span>
+                <span class="distribution-shot-content distribution-shot-content-active">72.2%</span>
+                <span class="distribution-shot-content">7.2%</span>
+            </div>
+            
+            <div class="hits">
+                <span class="distribution-shot-content">212 <span class="distribution-shot-content-text">Hits</span></span>
+                <span class="distribution-shot-content">742 <span class="distribution-shot-content-text">Hits</span></span>
+                <span class="distribution-shot-content">74 <span class="distribution-shot-content-text">Hits</span></span>
+            </div>
 
-            <div class="container2">
-                <div class="estadisticas2 stat1">Damage/Round <br> 137.9 <br> bottom 45%</div>
-                <div class="estadisticas2 stat2">K/D Ratio <br> 1.13 <br> Top 23%</div>
-                <div class="estadisticas2 stat3">Headshot% <br> 20.6% <br> Top 21%</div>
-                <div class="estadisticas2 stat4">Win % <br> 46.0% Bottom <br> 17%</div>
-            </div>
-            <div class="container"> 
-                <div class="estadisticas stat1">caja1</div>
-                <div class="estadisticas stat2">caja2</div>
-                <div class="estadisticas stat3">caja3</div>
-                <div class="estadisticas stat4">caja4</div>
-                <div class="estadisticas stat5">caja5</div>
-                <div class="estadisticas stat6">caja6</div>
-                <div class="estadisticas stat7">caja7</div>
-                <div class="estadisticas stat8">caja8</div>
-                <div class="estadisticas stat9">caja9</div>
-                <div class="estadisticas stat10">caja10</div>
-                <div class="estadisticas stat11">caja11</div>
-                <div class="estadisticas stat12">caja12</div>   
-            </div>
         </div>
+    </section>
+    
+    <div class="kda-and-stats">
+        <section class="kda">
+            <div class="kda-text">Damage/Round <br> 137.9 <br> bottom 45%</div>
+            <div class="kda-text">K/D Ratio <br> 1.13 <br> Top 23%</div>
+            <div class="kda-text">Headshot% <br> 20.6% <br> Top 21%</div>
+            <div class="kda-text">Win % <br> 46.0% Bottom <br> 17%</div>
+        </section> 
+
+        <section class="profile-stats"> 
+            <div class="estadisticas">caja1</div>
+            <div class="estadisticas">caja2</div>
+            <div class="estadisticas">caja3</div>
+            <div class="estadisticas">caja4</div>
+            <div class="estadisticas">caja5</div>
+            <div class="estadisticas">caja6</div>
+            <div class="estadisticas">caja7</div>
+            <div class="estadisticas">caja8</div>
+            <div class="estadisticas">caja9</div>
+            <div class="estadisticas">caja10</div>
+            <div class="estadisticas">caja11</div>
+            <div class="estadisticas">caja12</div>   
+        </section>
     </div>
 </main>
 <footer>
