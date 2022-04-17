@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="/styles/style.css">
+    <title>contact</title>
+    <link rel="stylesheet" href="styles/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <script src="contact.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -23,43 +27,76 @@
                 </div>
             </nav>
         </div>    
-    </header>
-    <main class="formulario"> 
-        <h1>Formulario de registro</H1>
-            <div class="containerform">
-                <div class="labels">
-                    <label for="firstname">Nombre:</label> <input type="text" name="Nombre" placeholder="Ingrese su nombre aquí">
-                    <label for="lastname">Apellido:</label> <input type="text" name="Apellido" placeholder="Ingrese su apellido aquí">
-                    <label for="street">Dirección:</label> <input type="text" name="Dirección" placeholder="Ingrese su dirección aquí">
-                    <label for="city">Ciudad:</label> <input type="text" name="Ciudad" value="CABA" placeholder=""> 
-                    <label for="postalcode">Codigo postal:</label> <input type="text" name="Codigo postal" placeholder="Ingrese su codigo postal aquí">
-                    <label for="birthday">Fecha de nacimiento: mm/dd/yyyy/</label> <input type="text" name="birthday" placeholder="Ingrese su fecha">
+    </header> 
+    <main>
+        <form action="" class="contact-main" id="contact-main">
+            <div class="contact-seccion" id="contact-username">
+                <label for="user" class="contact-label">Username</label>
+                <div class="contact-input">
+                    <input type="text" class="contact-cell" name="username" id="user">
+                    <i class="contact-error fa-solid fa-circle-xmark"></i>
                 </div>
-                <div class="inputs">
-                    <label for="gender">Genero:</label> <br>
-                    <input type="radio" name="gender" id="" checked>Hombre
-                    <input type="radio" name="gender" id="">Mujer
-                    <input type="radio" name="gender" id="">Otro
-                    <label for="preparation">Estudios:</label> <br>
-                    <input type="checkbox" name="estudios" id="" value="Primario">Primario
-                    <input type="checkbox" name="estudios" id="" value="Secundario">Secundario
-                    <input type="checkbox" name="estudios" id="" value="Universitario">Universitario
-                    <input type="checkbox" name="estudios" id="" value="Terciario">Terciario
-                    <input type="checkbox" name="estudios" id="" value="Otro">Otro <br> <br>
-                    <p>Sugerencias:</p> <br>
-                    <textarea name="" id="" cols="50" rows="5"></textarea> <br>
-                    <input type="submit" value="Enviar">
-                </div>
+                <p class="input-error">El usuario tiene que ser de 4 a 16 digitos y solo puede contener numeros, letras y guion bajo.</p>
             </div>
+
+            <div class="contact-seccion" id="contact-name">
+                <label for="name" class="contact-label">Name</label>
+                <div class="contact-input">
+                    <input type="text" class="contact-cell" name="name" id="name">
+                    <i class="contact-error fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="input-error">El nombre tiene que ser de 4 a 16 digitos y solo puede contener numeros, letras y guion bajo.</p>
+            </div>
+
+            <div class="contact-seccion" id="contact-pass">
+                <label for="pass" class="contact-label">Password</label>
+                <div class="contact-input">
+                    <input type="password" class="contact-cell" name="pass" id="pass">
+                    <i class="contact-error fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="input-error">La contraseña tiene que ser de 4 a 12 digitos.</p>
+            </div>
+
+            <div class="contact-seccion" id="contact-pass2">
+                <label for="pass2" class="contact-label">Repeat password</label>
+                <div class="contact-input">
+                    <input type="password" class="contact-cell" name="pass2" id="pass2">
+                    <i class="contact-error fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="input-error">Ambas contraseñas tienen que ser iguales.</p>
+            </div>
+
+            <div class="contact-seccion" id="contact-email">
+                <label for="email" class="contact-label">Email</label>
+                <div class="contact-input">
+                    <input type="email" class="contact-cell" name="email" id="email">
+                    <i class="contact-error fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="input-error">el correo solo puede contener letras, numeros, puntos, guines y guiones bajos.</p>
+            </div>
+
+            <div class="contact-seccion" id="contact-telphone">
+                <label for="telphone" class="contact-label">Telphone</label>
+                <div class="contact-input">
+                    <input type="text" class="contact-cell" name="telphone" id="telphone">
+                    <i class="contact-error fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="input-error">El telefono solo puede contener numeros y un maximo de 14 digitos.</p>
+            </div>
+
+            <div class="contact-box" id="group-terms">
+                <label for="" class="contact-label">
+                    <input class="contact-checkbox" type="checkbox" name="terms" id="terms">
+                    Acepto los terminos y condiciones.
+                </label>
+            </div>
+            
+            <div class="contact-btn" id="contact-seccion-btn">
+                <button type="submit" class="contact-submit">Submit</button>
+                <p class="contact-succesful" id="contact-succesful">El formulario se envio exitosamente!</p>
+            </div>  
+
+        </form>
     </main>
-    <article>
-        <h2>¿Donde nos encontramos?</h2>
-        <section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26251.800386613275!2d-58.4469654!3d-34.667958150000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbf6ecc6416b%3A0x7e1a82e0defbc2b3!2sVilla%20Soldati%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1650063374405!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-        </section>
-    </article>
-    <footer>
-        <p>Derechos Reservados @2022</p>
-    </footer>   
-</body>
+</body>    
 </html>
