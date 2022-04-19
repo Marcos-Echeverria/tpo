@@ -204,48 +204,12 @@ a{
     padding-top: 20px;
   }
 
-  /* FORMULARIOS */
-  .formulario{
-    color: white;
-    margin-left: 10px;
-  }
-
   footer{
     color: white;
     margin-top: 15px;
     background-color: #1B2733;
     text-align: center;
     padding: 30px;
-  }
-
-  label{
-    display: block;
-    margin-top: 15px;
-  }
-
-  h1{
-    display: block;
-    margin-top: 35px;
-    margin-bottom: 35px;
-    text-align: center;
-  }
-
-  textarea{
-    display: block;
-
-  }
-
-  .containerform{
-    display: grid;
-    grid-template-columns: auto auto;
-    background-color: #1B2733 ;
-  }
-
-  h2{
-    display: block;
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 15px;
   }
   
   .distribution-shot{
@@ -304,6 +268,23 @@ a{
   fill: #bfbdb6;
   width: 32px;
   height: 32px;
+}
+
+.rank-status{
+  border: solid white ;
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 100px;
+}
+
+.rank-current{
+  display: flex;
+  justify-content: space-around;
+}
+
+.rank-previous{
+  display: flex;
+  justify-content: space-around;
 }
 
 .contact-main{
