@@ -14,24 +14,25 @@ body{
 
 /* SECCION DE HEADER Y LINKS */
 .header{
-    
-    display: inline-flex;
     flex-direction: column;
     flex-wrap: nowrap;   
+    min-width: 100%;
 }
 
 .header-image-conteiner{
-    background-color: #263747;
+  position: relative;
+  background-color: #263747;
         
 }
 
-.chamber{
-    height: 200px;
+.img.chamber{
+ display: inline-flex;
+ min-width: 100%;
 }
 
 .avatar{
     position: absolute;
-    top: 120px;
+    bottom: 0;
 }
 
 .navbar{   
@@ -42,10 +43,6 @@ body{
     gap: 50px;
     margin-left: 200px;
     color: white;
-}
-
-img{
-    max-width: 100%;
 }
 
 a{
