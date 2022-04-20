@@ -199,7 +199,7 @@ a{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     background-color: #1B2733;
-    margin-top: 70px;
+    margin-top: 30px;
     padding-bottom: 20px;
     padding-top: 20px;
   }
@@ -271,20 +271,44 @@ a{
 }
 
 .rank-status{
-  border: solid white ;
   display: grid;
   grid-template-columns: auto auto;
-  height: 100px;
+  height: 70px;
+  margin-top: 35px;
+  background-color: #1B2733;
+  width: 50%;
+  color: white;
 }
 
 .rank-current{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  border: solid #18222D;
 }
 
 .rank-previous{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  border: solid #18222D;
+}
+
+.rank-img{
+  margin-top: 8px;
+  display: flex;
+}
+
+.rating-rank{
+  margin-top: 10px;
+}
+
+.text-rank{
+  display: block;
+  font-size: small;
+  margin-top: 5px;
+  color: gray;
+}
+.text-rating{
+  font-weight: bold;
 }
 
 .contact-main{
