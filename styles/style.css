@@ -22,10 +22,11 @@ body{
 .header-image-conteiner{
   position: relative;
   background-color: #263747;
+  display: flex;
         
 }
 
-.img.chamber{
+.img-chamber{
  display: inline-flex;
  min-width: 100%;
 }
@@ -130,6 +131,10 @@ a{
     align-items: center;
     justify-content: center;
   }
+
+  /* .kda-and-stats{
+    
+  } */
 
   .estadisticas:hover {
     background-color: rgba(61, 77, 97, 0.5);
