@@ -402,6 +402,22 @@ display: none;
 .contact-succesful-activo{
 display: block;
 }
+.contact-seccion-correct .contact-error{
+  color: #1ed12d;
+  opacity: 1;
+}
+
+.contact-seccion-incorrect .contact-label {
+  color: #FF4655;
+}
+
+.contact-seccion-incorrect .contact-error{
+  color: #FF4655;
+  opacity: 1;
+}
+.contact-seccion-incorrect .contact-cell{
+  border: 3px solid #FF4655;
+}
 
 @media screen and (max-width: 800px) {
 .contact-main{
