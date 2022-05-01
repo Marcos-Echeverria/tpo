@@ -400,8 +400,14 @@ display: none;
 }
 
 .contact-succesful-activo{
-display: block;
+
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  font-size: larger;
+  padding-bottom: 10px;
 }
+
 .contact-seccion-correct .contact-error{
   color: #1ed12d;
   opacity: 1;

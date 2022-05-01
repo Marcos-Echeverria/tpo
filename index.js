@@ -18,9 +18,10 @@ const validarFormulario = (e) => {
 		break
 		case "pass":
 			validarCampo(expressions.password, e.target, "pass");
+			validarPassword();
 		break
 		case "pass2":
-			validarPassword(expressions.password, e.target, "pass2");
+			validarPassword();
 		break
 		case "email":
 			validarCampo(expressions.email, e.target, "email");
@@ -31,6 +32,14 @@ const validarFormulario = (e) => {
 	};
 };
 
+const camp = {
+	username: false,
+	name: false,
+	pass: false,
+	email: false,
+	telphone: false
+};
+
 
 const validarCampo = (voiced, input, campo) => {
 	if(voiced.test(input.value)){
@@ -39,6 +48,7 @@ const validarCampo = (voiced, input, campo) => {
 		document.querySelector(`#contact-${campo} i`).classList.add("fa-circle-check");
 		document.querySelector(`#contact-${campo} i`).classList.remove("fa-circle-xmark");
 		document.querySelector(`#contact-${campo} .input-error`).classList.remove("input-error-activo");
+		camp[campo] = true;
 
 	} else{
 		document.getElementById(`contact-${campo}`).classList.add("contact-seccion-incorrect");
@@ -46,21 +56,32 @@ const validarCampo = (voiced, input, campo) => {
 		document.querySelector(`#contact-${campo} i`).classList.add("fa-circle-xmark");
 		document.querySelector(`#contact-${campo} i`).classList.remove("fa-circle-check");
 		document.querySelector(`#contact-${campo} .input-error`).classList.add("input-error-activo");
+		camp[campo] = false;
 
 	}	
 }
 
 const validarPassword = () => {
-	const inputPassword1 = document.getElementById("password1")
-	const inputPassword2 = document.getElementById("password2")
+	const inputPassword1 = document.getElementById("pass")
+	const inputPassword2 = document.getElementById("pass2")
 
 	if(inputPassword1.value !== inputPassword2.value){
 		document.getElementById("contact-pass2").classList.add("contact-seccion-incorrect");
 		document.getElementById("contact-pass2").classList.remove("contact-seccion-correct");
-		document.querySelector(`#contact-${campo} i`).classList.add("fa-circle-xmark");
-		document.querySelector(`#contact-${campo} i`).classList.remove("fa-circle-check");
-		document.querySelector(`#contact-${campo} .input-error`).classList.add("input-error-activo");
-	}
+		document.querySelector("#contact-pass2 i").classList.add("fa-circle-xmark");
+		document.querySelector("#contact-pass2 i").classList.remove("fa-circle-check");
+		document.querySelector("#contact-pass2 .input-error").classList.add("input-error-activo");
+		camp[pass] = false;
+
+	} else {
+		document.getElementById("contact-pass2").classList.remove("contact-seccion-incorrect");
+		document.getElementById("contact-pass2").classList.add("contact-seccion-correct");
+		document.querySelector("#contact-pass2 i").classList.remove("fa-circle-xmark");
+		document.querySelector("#contact-pass2 i").classList.add("fa-circle-check");
+		document.querySelector("#contact-pass2 .input-error").classList.remove("input-error-activo");
+		camp[pass] = true;
+		
+	};
 };
 
 inputs.forEach((input) =>{
@@ -70,4 +91,21 @@ inputs.forEach((input) =>{
 
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
+
+	const terms =	document.getElementById("terms");	 
+	if(camp.username && camp.name && camp.pass && camp.email && camp.telphone && terms.checked){
+		form.reset();
+
+		document.getElementById("contact-succesful").classList.add("contact-succesful-activo");
+
+		setTimeout(() => {
+			document.getElementById("contact-succesful").classList.remove("contact-succesful-activo");
+		}, 5000 )
+
+		document.querySelectorAll(".contact-seccion-correct").forEach((icon)=>{
+			icon.classList.remove("contact-seccion-correct");	
+		});
+	}else {
+		document.getElementById();
+	}
 } );
