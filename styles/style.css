@@ -27,8 +27,13 @@ display: flex;
 }
 
 .img-chamber{
-display: inline-flex;
-min-width: 100%;
+  display: inline-flex;
+  min-width: 100%;
+}
+
+.img-cyper{
+  display: inline-flex;
+  min-width: 100%;
 }
 
 .avatar{
@@ -208,8 +213,8 @@ footer{
 color: white;
 margin-top: 15px;
 background-color: #1B2733;
-text-align: center;
-padding: 30px;
+/* text-align: center; */
+padding: 10px;
 }
 
 .distribution-shot{
@@ -317,7 +322,9 @@ display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 20px;
 color: white;
-margin-left: 30px;
+padding: 28px;
+margin-top: 20px;
+background-color: #1B2733;
 }
 
 .contact-label{
@@ -423,6 +430,41 @@ display: none;
 }
 .contact-seccion-incorrect .contact-cell{
   border: 3px solid #FF4655;
+}
+
+.question-h1{
+  display: block;
+  margin: 15px;
+  color: rgb(255 255 255);
+}
+
+.iframe-lanus{
+  display: block;
+  margin-left: 30px;
+}
+.github-icon{
+  width: 25px;
+  height: 25px;
+}
+
+.linkdn-icon{
+  width: 25px;
+  height: 25px;
+}
+
+.icons-footer{
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.tittle-contact{
+  display: grid;
+  margin-top: 30px;
+  font-size: xx-large;
+  color: white;
+  padding: 20px;
+  justify-content: center;
+  background-color: #1B2733;
 }
 
 @media screen and (max-width: 800px) {
