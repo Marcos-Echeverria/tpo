@@ -6,8 +6,8 @@
   object-fit: contain;
   text-align: center;
   margin-left: 18px;
-  margin-right: 44px;
   margin-top: 15px;
+  max-width: fit-content;
   background-color: #0F1923;
   border-radius: 6px;
 }
@@ -37,9 +37,9 @@
   grid-template-columns: repeat(4, 1fr);
   object-fit: contain;
   margin-top: 10px;
-  margin-right: 30px;
   background-color: #0F1923;
   border-radius: 6px;
+  max-width: fit-content;
 }
 
 .kda-text{
@@ -50,6 +50,7 @@
   display: grid;
   align-items: center;
   justify-content: center;
+
 }
 
 .kda-text:hover {
@@ -239,9 +240,42 @@
 
 @media only screen and (max-width: 678px) and (min-width: 400px)  {
 
+  
+
 }
 
 @media only screen and (max-width: 900px) and (min-width: 678px)  {
+  .img-chamber {
+    height: 26vh;
+    object-fit: cover;
+  }
+
+  .avatar {
+    top: -60px;
+    height: 100px;
+  }
+
+  .accuracy-and-stats { 
+    display:block;
+  }
+
+  .kda{
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto; 
+  }
+
+  .profile-stats{
+    grid-template-columns: repeat(4, 1fr);
+    margin:auto;
+  }
+
+  .accuracy{
+    margin: auto;
+  }
+
+  .rank-status {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 1200px) and (min-width: 900px)  {
 
