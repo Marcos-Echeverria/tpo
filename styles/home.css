@@ -42,6 +42,10 @@
   max-width: fit-content;
 }
 
+.kda-and-stats{
+  margin: auto;
+}
+
 .kda-text{
   color: white;
   height: 76px;
@@ -239,9 +243,44 @@
 }
 
 @media only screen and (max-width: 678px) and (min-width: 400px)  {
+  body{
+    min-width: fit-content;
+  }
 
+  .img-chamber {
+    height: 18vh;
+    width: auto;
+  }
+
+  .avatar {
+    top: -60px;
+    height: 100px;
+  }
+
+  .rank-status{
+    display: grid;
+    width: 100%;
+  }
+
+  .accuracy{
+    margin: auto;
+  }
+
+  .accuracy-and-stats { 
+   display: grid;
+   grid-template-columns: none;
+  }
+
+  .kda{
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto; 
+  }
+
+  .profile-stats{
+    grid-template-columns: repeat(3, 1fr);
+    margin:auto;
+  }
   
-
 }
 
 @media only screen and (max-width: 900px) and (min-width: 678px)  {
@@ -278,8 +317,30 @@
   }
 }
 @media only screen and (max-width: 1200px) and (min-width: 900px)  {
+  .accuracy-and-stats { 
+    grid-template-columns: none;
+  }
 
-}
+  .rank-status {
+    width: 100%;
+  }
+
+  .accuracy{
+    margin: auto;
+    width: 50%;
+  }
+  .profile-stats{
+    margin: auto;
+  }
+  .kda{
+    margin: auto;
+  }
+ }
 @media only screen and (max-width: 1366px) and (min-width: 1200px)  {
-
+  .estadisticas{
+    width: 143px;
+  }
+  .kda-text{
+    width: 215px;
+  }
 }
