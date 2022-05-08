@@ -243,13 +243,9 @@
 }
 
 @media only screen and (max-width: 678px) and (min-width: 400px)  {
-  body{
-    min-width: fit-content;
-  }
-
   .img-chamber {
-    height: 18vh;
-    width: auto;
+    height: 19vh;
+    object-fit: cover;
   }
 
   .avatar {
@@ -272,18 +268,22 @@
   }
 
   .kda{
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     margin: auto; 
   }
 
   .profile-stats{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin:auto;
   }
   
 }
 
 @media only screen and (max-width: 900px) and (min-width: 678px)  {
+  .navbar{
+    gap: 33px;
+  }
+
   .img-chamber {
     height: 26vh;
     object-fit: cover;
@@ -317,6 +317,7 @@
   }
 }
 @media only screen and (max-width: 1200px) and (min-width: 900px)  {
+
   .accuracy-and-stats { 
     grid-template-columns: none;
   }
@@ -335,12 +336,23 @@
   .kda{
     margin: auto;
   }
+  .kda-text{
+    width: 220px;
+  }
+  .estadisticas{
+    width: 147px;
+  }
  }
 @media only screen and (max-width: 1366px) and (min-width: 1200px)  {
   .estadisticas{
     width: 143px;
   }
+
   .kda-text{
     width: 223px;
+  }
+
+  .accuracy{
+    width: 286px;
   }
 }
