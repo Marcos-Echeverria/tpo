@@ -1,0 +1,45 @@
+.weapons-container{
+    margin-top: 20px;
+}
+
+.weapons-stat{
+    height: 50px;
+    width: 100%;
+    display: flex;   
+    border: solid rgb(24 34 45);
+}
+.tittle-cell{
+    width: 100%;
+    display: flex;
+    place-content: center;
+    color: white;
+    margin-bottom: 20px;
+}
+.weapons-specific-tittle{
+    width: 100%;
+    display: flex;
+    padding-top: 17px;
+    place-content: center;
+    color: white;
+    background-color: rgb(27 39 51);
+}
+
+.weapons-specific{
+    width: 100%;
+    display: flex;
+    place-content: center;
+    color: white;   
+    background-color: rgb(27 39 51);
+}
+.weapon-img{
+    width: 108px;
+    height: 34px;
+    margin: 3px;
+    margin-top: 7px;
+}
+.weapon-img-short{
+    width: 83px;
+    height: 37px;
+    margin-top: 7px;
+    align-content: center;
+}
