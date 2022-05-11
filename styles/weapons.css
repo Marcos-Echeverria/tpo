@@ -9,9 +9,7 @@
     border: solid rgb(24 34 45);
 }
 .tittle-cell{
-    width: 100%;
-    display: flex;
-    place-content: center;
+    display: flex; 
     color: white;
     margin-bottom: 20px;
 }
@@ -19,6 +17,7 @@
     width: 100%;
     display: flex;
     padding-top: 17px;
+    padding-bottom: 20px;
     place-content: center;
     color: white;
     background-color: rgb(27 39 51);
@@ -30,6 +29,7 @@
     place-content: center;
     color: white;   
     background-color: rgb(27 39 51);
+    align-items: center;
 }
 .weapon-img{
     width: 108px;
