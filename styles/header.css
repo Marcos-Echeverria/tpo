@@ -68,13 +68,14 @@
   }
   
   .btn {
+    display: flex;
+    align-items: center;
     height: 50px;
     width: 100px;
     border-radius: 6px;
     background-color: transparent;
     color: #fff;
     transition: all 500ms ease;
-    /* border: 2px solid #263747; */
     z-index: 0;
     cursor: pointer;
     padding: 13px;
@@ -95,3 +96,71 @@
     box-shadow: 0 0 20px 5px rgba(104, 34, 45, 0.712);
   }
   }
+
+  .Navbar {
+    background-color: rgb(38 55 71);
+    display: flex;
+    padding: 16px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+  }
+
+  .Navbar__Items {
+      display: flex;
+  }
+
+  .Navbar__Link {
+    padding-right: 8px;
+  }
+
+  .Navbar__Items--right {
+      margin-left: auto;
+  }
+
+  .Navbar__Link-toggle {
+    display: none;
+  }
+  
+  .boton{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+  }
+
+  @media (max-width: 768px) {
+      .Navbar, .Navbar__Items {
+          flex-direction: column;
+          padding-bottom: 30px;
+      }
+
+      .Navbar__Items {
+          display: none;
+      }
+
+      .Navbar__Items--right {
+          margin-left: 0;
+      }
+
+      .Navbar__Link-toggle {
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+      }
+
+      .Navbar__ToggleShow{
+        display: flex;
+        align-self: center;
+        gap: 32px;
+        padding-bottom: 0px;
+    }
+    .btn{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    border: 2px solid #263747;
+  }
+
+  }
+  
