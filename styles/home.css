@@ -367,9 +367,6 @@
   .accuracy{
     width: 286px;
   }
-}
-
-@media only screen and (max-width: 1920px) and (min-width: 1366px){
   footer{
     position: absolute;
     width: 100%;
