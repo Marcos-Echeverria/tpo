@@ -3,6 +3,7 @@ footer{
     margin-top: 15px;
     background-color: #1B2733;
     padding: 10px;
+    position: relative;
   }
 
   .github-icon{
@@ -21,7 +22,12 @@ footer{
     align-items: center;
   }
 
-@media (max-width: 400px)  {
-/*  */
+
+@media only screen and (min-width: 1920px) {
+  footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
 }
   
