@@ -354,11 +354,6 @@
   .estadisticas{
     width: 147px;
   }
-  footer{
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-  }
  }
 @media only screen and (max-width: 1366px) and (min-width: 1200px)  {
   .estadisticas{
@@ -371,5 +366,13 @@
 
   .accuracy{
     width: 286px;
+  }
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 1366px){
+  footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
   }
 }
